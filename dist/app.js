@@ -5,7 +5,6 @@
 // npm i tslint --save-dev
 // npm i typescript --save-dev
 // ./node_modules/.bin/tslint --init
-// tsc <- otra vez, para traducir y aplicar todos los archivos TS a JS
 // npm i express cors dotenv
 // npm i --save-dev @types/express
 // tsc --watch
