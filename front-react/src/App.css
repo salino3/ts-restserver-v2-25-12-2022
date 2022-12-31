@@ -1,0 +1,334 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button, input{
+  border-radius: 15px 15px
+}
+
+button{
+  font-size: 100%;
+}
+
+button:active{
+  font-size: 90%;
+}
+
+li {
+  list-style-type: none;
+}
+
+input{
+ padding-left: 0.5em;
+}
+
+
+/* NavBar */
+
+.myNav{
+    display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+    background-image: url('../public/assets/estrellas.jpg');
+  background-position: center;
+  background-size: 50%;
+  height: 10em;
+  border-radius: 20px 20px;
+
+
+}
+
+.divNavBar {
+  background-color: #282c34;
+  color: white;
+  border: solid 2.5px blue;
+  border-radius: 20px 20px;
+  width: 95%;
+  height: 10em;
+  margin: 0 auto;
+  margin-top: 2em;
+  white-space: nowrap;
+} 
+
+.divBlock1 {
+  margin-left: -4em; 
+}
+
+.div1nav{
+  margin-left: 4em;
+   display: flex;
+  justify-content: space-between;
+  width: 15em;
+  align-items: start;
+}
+
+.btn_start{
+  margin-top: 1.5em;
+}
+
+.div2nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div2nav li {
+  margin-top: 2em;
+  margin-right: 3em;
+  background: #ccc;
+}
+
+.div3nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+
+.div4nav{
+    margin-top: 2em;
+
+}
+
+.divLog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divLog > div {
+  flex: 0 0 auto;
+
+}
+
+/* Home */
+
+.divHome{
+  border: solid 2px blue;
+  width: 20em;
+  height: 22em;
+  padding: 2em;
+  margin: 0 auto;
+  margin-bottom: 5em;
+
+}
+
+.divLinks{
+  display: grid;
+
+}
+
+.divLinks div{
+  display: flex;
+ align-items: center;
+ margin-right: 2em;
+ margin-left: 2em;
+ white-space: nowrap;
+ 
+}
+
+.divLinks div p{
+ margin-right: 1em;
+
+}
+
+.divLinks div a{
+ margin-left: 2em;
+}
+
+
+.thelogo{
+  margin-top: 1em;
+}
+
+
+/* List */
+
+.this{
+  color: red;
+}
+
+.divUser{
+  margin: 0 auto;
+}
+
+.myTr:nth-child(even){ 
+  color: yellow
+ }
+
+.myTr:nth-child(odd){
+   color: green
+  }
+
+/* PrivatePage */
+
+.hrPrivatePage{
+  width: 30em;
+}
+
+.divInfo{
+  border: solid 2px blue;
+  background: rgb(0, 0, 255, 0.5);
+  width: 18em;
+  height: 20em;
+  margin: 0 auto;
+  display: grid;
+ padding-top: 2em;
+ margin-bottom: 5em;
+}
+
+.divInfo p {
+  margin: 0;
+}
+
+/* AdminPage */
+
+thead{
+ color: blue;
+}
+
+.divAdmin{
+display: grid;
+   white-space: nowrap;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+ text-align: start;
+ margin-top: 2em;
+}
+
+.divAdmin td{
+ padding: 1em;
+ margin-bottom: 5em;
+}
+
+/* WebMasterPage */
+
+.divMayorWM{
+  padding-top: 1.5em;
+  margin-bottom: 5em;
+
+}
+
+form .divInputs{
+  width: 40em;
+  margin: 0 auto;
+  
+}
+
+.divInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+/* EditInfo */
+
+.divEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.myInfo > div {
+  display: flex;
+  align-items: center;
+  text-align: left; 
+}
+
+.myInfo  input {
+  margin-right: 5em;
+    height: 20px;
+    
+}
+
+.mySelect{
+    margin-right: 11em;
+
+}
+
+/* Input */
+
+.divCard{
+   cursor: pointer;
+  text-align: start;
+}
+
+.btnNav{
+  margin: 0.3em;
+}
+
+/* Card */
+
+.divRows{
+  margin: 0.5em;
+  padding-left: 1.2em;
+}
+
+/* PageNotFound */
+
+.divPNF{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 12em;
+
+}
+
+.divPNF li{
+  cursor: pointer;
+  width: 7em;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+
+
+/* @Media Queries */
+
+@media (min-width: 50em)  {
+
+.divBlock1 {
+  margin-left: 2em; 
+}
+
+.divBlock2 {
+  margin-right: 10em; 
+}
+
+};
+
+
+
