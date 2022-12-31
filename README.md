@@ -24,7 +24,9 @@ select * from usuarios;
 # 
 
 Then for use this repository you need to fill de file 'connection.ts' in 'db' folder,
-open the terminal, for run the backend use the command 'nodemon dist/app.js', and for front end, go to folder 'front-react' and use the command 'npm start'
+open the terminal, for run the backend use the command 'nodemon dist/app.js', 
+open another terminal and in the backend folder use this command 'tsc --watch --jsx react'. 
+And for front end, go to the folder 'front-react' and use the command 'npm start'
 
 
  # Project description
