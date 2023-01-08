@@ -50,7 +50,7 @@ const MyProvider = ({children}: Props) => {
 
   //* my Actions
   //
-  //* logoutUser
+  //* loginUser
   const loginUser = useCallback(function (info: any) {
     dispatch({
       type: "UPDATE_USER_CHECK_TRUE",
@@ -113,7 +113,6 @@ const MyProvider = ({children}: Props) => {
 
   //* Modify data student
   const updateUser = useCallback(async (id: T, user: any) => {
- 
     try {
       await axios.put(`http://localhost:8000/api/usuarios/${id}`, user);
 
@@ -123,7 +122,6 @@ const MyProvider = ({children}: Props) => {
       alert("There has been an error!");
       console.log(error);
     }
- 
   }, []);
 
   //* Delete a User from Web Master
@@ -166,15 +164,13 @@ const MyProvider = ({children}: Props) => {
   const loginWB = useCallback(function () {
     window.localStorage.setItem(rolWebMaster, "true");
     setWebMaster(true);
-      console.log("Executing loginWB");
-
+    console.log("Executing loginWB");
   }, []);
 
   const logoutWB = useCallback(function () {
     window.localStorage.removeItem(rolWebMaster);
     setWebMaster(false);
-      console.log("Executing logoutWB");
-
+    console.log("Executing logoutWB");
   }, []);
 
   //* Rol Admin
@@ -187,23 +183,18 @@ const MyProvider = ({children}: Props) => {
   const loginAdmin = useCallback(function () {
     window.localStorage.setItem(rolAdmin, "true");
     setAdmin(true);
-      console.log("Executing loginAdmin");
-
+    console.log("Executing loginAdmin");
   }, []);
 
   const logoutAdmin = useCallback(function () {
     window.localStorage.removeItem(rolAdmin);
     setAdmin(false);
-          console.log("Executing logoutAdmin");
-
+    console.log("Executing logoutAdmin");
   }, []);
-
-  
-
 
   return (
     <GlobalContext.Provider
-      value={{ 
+      value={{
         //
         state,
         loginUser,
