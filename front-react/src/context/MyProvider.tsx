@@ -25,7 +25,7 @@ const MyProvider = ({children}: Props) => {
 
   //* API call
   const fetchApi = useCallback(async () => {
-    fetch("http://localhost:8000/api/usuarios")
+   await fetch("http://localhost:8000/api/usuarios")
       .then((response) => response.json())
       .then((data) => {
         // Envía la acción de carga de datos al reducer
